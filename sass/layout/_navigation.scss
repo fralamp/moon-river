@@ -1,0 +1,102 @@
+.navigation {
+    position: absolute;
+    width: 100%;
+    z-index: 15;
+    background-color: transparent;
+
+    &__logo-box {
+        margin-right: auto;
+    }
+
+    &__nav {
+        max-width: 115rem;
+        padding: 5.1rem 1.5rem;
+        display: flex;
+        margin: 0 auto;
+        align-items: center;
+        z-index: 15;
+        position: relative;
+    }
+
+    &__general {
+        display: flex;
+        width: 15rem;
+        margin-right: 8rem;
+        justify-content: space-between;
+
+    }
+
+    &__link {
+        display: block;
+        transition: all .3s;
+
+        & svg {
+            fill: $color-text-primary;
+            width: 2rem;
+            height: 2rem;
+        }
+
+        &:hover svg {
+            transform: scale(1.1);
+        }
+    }
+
+    &__checkbox {
+        display: none;
+    }
+
+    &__button {
+        width: 3rem;
+        height: 1.6rem;
+        text-align: center;
+        cursor: pointer;
+        user-select: none;
+    }
+
+    &__burger {
+        position: relative;
+        display: inline-block;
+        color: $color-text-primary;
+        transition: transform .3s;
+
+        &,
+        &::before,
+        &::after {
+            display: inline-block;
+            width: 3rem;
+            height: 1.8px;
+            background-color: $color-text-primary;
+        }
+
+        &::before,
+        &::after 
+        {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            transition: all .2s;
+        }
+        &::before {top: .8rem;}
+        &::after {top: 1.6rem;}
+
+    }
+
+    &__checkbox:checked ~ .popup { 
+        display: block;
+    }
+
+    &__checkbox:checked + &__button &__burger::before{
+        top: 6px;
+        transform: rotate(135deg);
+    }
+
+    &__checkbox:checked + &__button &__burger::after{
+        top: 6px;
+        transform: rotate(-135deg);
+    }
+
+    &__checkbox:checked + &__button &__burger {
+        background-color: transparent;
+    }
+}

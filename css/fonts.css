@@ -1,0 +1,27 @@
+@font-face {
+	font-family: 'Futura PT Demi', sans-serif;
+	src:
+		url('../fonts/futura_pt_demi.woff2') format('woff2'),
+		url('../fonts/futura_pt_demi.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Futura PT Book', sans-serif;
+	src: 
+		url('../fonts/futura_pt_book.woff2') format('woff2'),
+		url('../fonts/futura_pt_book.woff') format('woff'); 
+}
+
+@font-face {
+	font-family: 'Futura PT Light', sans-serif;
+	src:
+		url('../fonts/futura_pt_light.woff2') format('woff2'), 
+		url('../fonts/futura_pt_light.woff') format('woff');
+}
+
+@font-face {
+	font-family: 'Futura PT Medium', sans-serif;
+	src: 
+		url('../fonts/futura_pt_medium.woff2') format('woff2'), 
+		url('../fonts/futura_pt_medium.woff') format('woff');
+}

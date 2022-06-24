@@ -1,0 +1,9 @@
+.arrow {
+    font-size: 5.1rem;
+
+    &--reverse{
+        transform: rotate(180deg);
+        transform-origin:center;
+        margin-left: auto;
+    }
+}

@@ -1,0 +1,164 @@
+.place {
+    background-color: $color-primary;
+    overflow: hidden;
+    margin-bottom: 2rem;
+
+    &__content {
+        display: flex;
+        margin: 0 auto;
+        max-width: 115rem;
+        padding: 0 1.5rem;
+
+        @include respond (tab-port) {
+            flex-direction: column;
+        }
+
+    }
+
+    &__inner-block {
+        margin: 0 auto;
+        flex: 1 0 100%;
+    }
+
+    &__block-img {
+        position: relative;
+        flex: 0 0 100%;
+        transform: translate(-52%, 10%);
+
+        @include respond (tab-land) {
+            transform: translate(-52%, 5%);
+        }
+
+        @include respond (tab-port) {
+            transform: none;
+            margin: 0 auto 2rem;
+        }
+
+        & img {
+            @include respond (tab-port) {
+                width: 50vw;
+            }
+        }
+    }
+
+
+
+
+    &__text {
+        display: flex;
+        flex-direction: column;
+        margin: 17.3rem 0;
+        width: 44%;
+
+        @include respond (tab-port) {
+            margin: 5rem 0;
+            width: 100%;
+        }
+    }
+
+    &__title {
+        margin-bottom: 1.6rem;
+        font-size: 4.8rem;
+        font-family: 'Forum', sans-serif;
+
+        @include respond (phone) {
+            font-size: 3rem; 
+         }
+    }
+
+    &__subtitle{
+        display: block;
+        margin-bottom: 6rem;
+
+        @include respond (tab-port) {
+            margin-bottom: 3rem;
+        }
+    }
+
+    &__spotmap {
+        position: absolute;
+        top: 0rem;
+        left: 0rem;
+        z-index: 4;
+
+        @include respond (tab-port) {
+            top: -10rem; 
+        }
+    }
+
+    &__address {
+        position: absolute;
+        display: none;
+        background-color: #6e6c6c;
+        padding: 2px 4px;
+    }
+
+    &__icon  {
+        position: absolute;
+        width: 5rem;
+        height: 5rem;
+        cursor: pointer;
+        fill: #6e6c6c;
+
+        &:hover {
+            fill: $color-text-primary;
+        }
+
+        &--1{
+            top: 14.9rem;
+            left: 8.7rem;
+
+            &:hover ~ .place__address--1 {
+                display: block;
+                top: 13.9rem;
+                left: 14rem;
+            }
+        }
+        &--2{
+            top: 17.2rem;
+            left: 26.8rem;
+
+            &:hover ~ .place__address--2 {
+                display: block;
+                top: 12.9rem;
+                left: 32rem;
+            }
+        }
+        &--3{
+            top: 23.2rem;
+            left: 37.5rem;
+
+            &:hover ~ .place__address--3 {
+                display: block;
+                top: 18.9rem;
+                left: 42rem;
+            }
+        }
+        &--4{
+            top: 36.1rem;
+            left: 48.8rem;
+
+            &:hover ~ .place__address--4 {
+                display: block;
+                top: 31.9rem;
+                left: 30rem;
+            }
+
+            @include respond (tab-port) {
+                top: 40.1rem;
+                left: 34.8rem;
+            }
+
+        }
+        &--5{
+            top: 26.8rem;
+            bottom: 13.2rem;
+
+            &:hover ~ .place__address--5 {
+                display: block;
+                top: 22.9rem;
+                left: 4rem;
+            }
+        }
+    }
+}

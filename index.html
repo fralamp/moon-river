@@ -1,0 +1,629 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="fonts" href="./css/fonts.css">
+    <link rel="shortcut icon" type="image/png" href="./img/icon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Forum&display=swap" rel="stylesheet">
+    <title>Moon River - High Juwerly</title>
+</head>
+<body>
+    <div class="navigation" id="navigation--bg">
+        <div class="navigation__nav" >
+            <div class="navigation__logo-box">
+                <a href="#" class="logo__link">
+                    <img src="./img/logo-2.svg" alt="logo Moon-River" class="logo__photo">
+                </a>
+            </div>
+            <div class="navigation__general">
+                <a href="#" class="navigation__link">
+                    <svg class="social__icon">
+                        <use xlink:href="/img/sprite.svg#icon-heart-o">
+                        </use>
+                    </svg>
+                </a>
+                <a href="#" class="navigation__link">
+                    <svg class="social__icon">
+                        <use xlink:href="/img/sprite.svg#icon-user">
+                        </use>
+                    </svg>
+                </a>
+                <a href="#" class="navigation__link">
+                    <svg class="social__icon">
+                        <use xlink:href="/img/sprite.svg#icon-shopping-bag">
+                        </use>
+                    </svg>
+                </a>
+            </div>
+            <input type="checkbox" class="navigation__checkbox" id="nav__toggle">
+            <label class="navigation__button" for="nav__toggle" id="close">
+                <span class="navigation__burger">&nbsp;
+                </span>
+            </label>
+
+            <div class="popup">
+                <div class="popup__inner-block"> 
+                    <nav class="popup__nav">
+                        <ul class="popup__nav-top">
+                            <li class="popup__item-top">
+                                <a href="#" class="popup__link popup__link">
+                                    <h3 class="popup__nav-title">Ювелирные изделия</h3>
+                                </a>
+                            </li>
+                            <li class="popup__item-top">
+                                <a href="#" class="popup__link">
+                                    <h3>часы</h3>
+                                </a>
+                            </li>
+                            <li class="popup__item-top">
+                                <a href="#" class="popup__link">
+                                    <h3>ароматы</h3>
+                                </a>
+                            </li>
+                            <li class="popup__item-top">
+                                <a href="#" class="popup__link">
+                                    <h3>бренды</h3>
+                                </a>
+                            </li>
+                            <li class="popup__item-top">
+                                <a href="#" class="popup__link">
+                                    <h3>изделия из кожи</h3>
+                                </a>
+                            </li>
+                            <li class="popup__item-top">
+                                <a href="#" class="popup__link">
+                                    <h3>Свадебные украшения</h3></a>
+                                </a>
+                            </li>
+                            <li class="popup__item-top">
+                                <a href="#" class="popup__link">
+                                    <h3>другое</h3>
+                                </a>
+                            </li>
+                        </ul>
+                    </nav>
+                </div> 
+
+                <div class="popup__container">
+                    <div class="popup__categories">
+    
+                        <div class="popup__subcategories">
+                            <h4 class="popup__title">Для кого</h4>
+                            <ul class="popup__list">
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">
+                                        Для женщин
+                                    </a>
+                                </li>
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">
+                                        Для мужчин
+                                    </a>
+                                </li>
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">Для детей</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="popup__subcategories">
+                            <h4 class="popup__title">Категории</h4>
+                            <ul class="popup__list">
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">
+                                        Кольца
+                                    </a>
+                                </li>
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">
+                                        Браслеты
+                                    </a>
+                                </li>
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">Колье</a>
+                                </li>
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">Серьги</a>
+                                </li>
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">Броши</a>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="popup__subcategories">
+                            <h4 class="popup__title">материал</h4>
+                            <ul class="popup__list">
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">
+                                        Изделия с&nbsp;бриллиантами
+                                    </a>
+                                </li>
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">
+                                        Желтое золото
+                                    </a>
+                                </li>
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">Белое золото</a>
+                                </li>
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">Розовое золото
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                        <div class="popup__subcategories">
+                            <h4 class="popup__title">бренд</h4>
+                            <ul class="popup__list">
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">
+                                        Mercury
+                                    </a>
+                                </li>
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">
+                                        Chopard
+                                    </a>
+                                </li>
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">
+                                        Cartier
+                                    </a>
+                                </li>
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">Graff
+                                    </a>
+                                </li>
+                                <li class="popup__item">
+                                    <a href="" class="popup__link">Garrard</a>
+                                </li>
+                                <li class="popup__item">
+                                    <a href="" class="popup__link popup__link--overall">Показать все бренды</a>
+                                </li>
+                            </ul>
+                        </div>
+    
+                    </div> <!--Categories end -->
+    
+                    <div class="popup__content">
+                        <figure class="popup__ad">
+                            <!-- <img src="./img/people/two-m.png" alt="ad photo" class="popup__photo"> -->
+                            <figcaption class="popup__text">
+                                <span>
+                                    Новая коллекция <strong>by Mercury
+    
+                                    </strong> 
+                                </span>
+                            </figcaption>
+                            <figcaption class="popup__name-collection">
+                                <h3>
+                                    JUSTE UN CLOU
+                                </h3>
+                            </figcaption>
+                            <figcaption class="popup__collection-see">
+                                <a href="#" class="popup__collection-link">
+                                    <span>Cмотреть коллекцию</span>    
+                                    <span class="arrow">&rarr;</span>
+                                </a>
+                            </figcaption>
+                        </figure>
+    
+                        <div class="popup__social-media">
+
+                        <div class="popup__social-group">
+                            <h4>телефон горячей линии</h4>
+                            <a class="popup__telephone" href="tel:+7800456456">
+                               <p>+7 800 456 456</p>
+                            </a>
+                            <div class="social">
+                                <a href="#" class="social__link" target="_blank">
+                                    <svg class="social__icon">
+                                    <use xlink:href="./img/sprite.svg#icon-facebook">
+                                    </use>
+                                    </svg>
+                                </a>
+                                <a href="#" class="social__link" target="_blank">
+                                    <svg class="social__icon">
+                                        <use xlink:href="/img/sprite.svg#icon-instagram">
+                                        </use>
+                                    </svg>
+                                </a>
+                            </div>
+
+                        </div>    
+                        <div class="popup__social-group">        
+    
+                            <form class="form-mail" action="#">
+                                <span class="form-mail__text">подпишитесь на новости</span>
+                                <div class="form-mail__container">
+                                    <input class="form-mail__input" type="email" name="mail" id="form-mail" placeholder="Введите E-mail" required>
+                                    <button class="form-mail__btn" form="form-mail" type="submit" aria-label="subscribe to the newsletter">&rarr;</button>
+                                </div>    
+                            </form>
+    
+                            <div class="social">
+                                <a href="#" class="social__link-store" target="_blank">
+                                    <img src="./img/social-media/apple-store-logo.png" alt="link to apple store" class="social__img">
+                                </a>
+                                <a href="#" class="social__link-store" target="_blank">
+                                    <img src="./img/social-media/google-play-logo.png" alt="link to google play" class="social__img">
+                                </a>
+                            </div>
+
+                            </div>
+
+                        </div> <!-- social-media end-->
+    
+                    </div> <!--content end -->
+                </div> <!--container end -->
+            </div> <!--popup end -->
+        </div>
+
+    </div> <!--navigation end -->
+
+    <header class="header">
+
+        <div class="header__container">  
+            <div class="header__content">
+                <div class="header__title">
+                    <h1 class="header__heading">
+                        HIGH JEWELRY
+                    </h1>
+                    <a href="#cartier" class="header__link header__link--see">
+                        Смотреть коллекцию
+                    </a>
+                </div>
+                <img src="./img/jewelry/circle.top-m.png" alt="circle photo" class="header__img">
+            </div> <!--content end-->
+
+            <div class="header__text">
+                <div class="header__language">
+                    <a href="#" class="header__link header__link--ru">RU</a>
+                    <a href="#" class="header__link header__link--en">EN</a>
+                </div>
+                <div class="header__inner-block">
+                    <h4 class="header__name-product">КОЛЬЦО TRINITY, Cartier
+                    </h4>
+                    <p class="header__subtitle">Белое золото, бриллианты</p>
+                    <p class="header__price">498 000 ₽</p>
+                </div>
+            </div>
+            
+        </div>  
+    </header>
+    <section class="sections">
+        <div class="sections__card">
+            <figure class="sections__background sections__background--men">
+                <figcaption class="sections__text">
+                    <a href="#" class="sections__link">
+                        <p class="sections__paragraph">
+                            Перейти в раздел
+                        </p>
+                    </a>
+                    <h2 class="sections__title">
+                        Для&nbsp;мужчин
+                    </h2>
+                </figcaption>
+            </figure>
+        </div>
+        <div class="sections__card">
+            <figure class="sections__background sections__background--women">
+                <figcaption class="sections__text">
+                    <a href="#" class="sections__link">
+                        <p class="sections__paragraph">
+                            Перейти в раздел
+                        </p>
+                    </a>
+                    <h2 class="sections__title">
+                        Для&nbsp;женщин
+                    </h2>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <section class="place">
+        <div class="place__content">
+            <div class="place__inner-block">
+                <div class="place__text">
+                    <h3 class="place__title">Найди бутик около себя</h3>
+                    <p class="place__subtitle">
+                        Введите свой адрес и узнайте о самых ближайших бутиках к вам
+                    </p>
+                    <form class="form-address" action="#">
+                        <div class="form-mail__container">
+                            <input class="form-address__input" type="text" name="address" id="form-address" placeholder="Введите адрес" required>
+                            <button class="form-address__btn" form="form-address" type="submit" aria-label="search place">&rarr;</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+            <figure class="place__block-img">            
+                <img src="./img/map.png" alt="photo map" class="place__map-img">
+                <figcaption class="place__spotmap">
+                    <svg class="place__icon place__icon--1">
+                        <use xlink:href="/img/sprite.svg#icon-location">
+                        </use>
+                    </svg>
+                    <p class="place__address place__address--1">ул.Арбат,&nbsp;33</p>
+
+                    <svg class="place__icon place__icon--2">
+                        <use xlink:href="/img/sprite.svg#icon-location">
+                        </use>
+                    </svg>
+                    <p class="place__address place__address--2">ул.Тверская,&nbsp;24</p>
+
+                    <svg class="place__icon place__icon--3">
+                        <use xlink:href="/img/sprite.svg#icon-location">
+                        </use>
+                    </svg>
+                    <p class="place__address place__address--3">Покровский&nbsp;бульвар,&nbsp;5</p>
+
+                    <svg class="place__icon place__icon--4">
+                        <use xlink:href="/img/sprite.svg#icon-location">
+                        </use>
+                    </svg>
+                    <p class="place__address place__address--4">ул.Марксистская,&nbsp;3с1</p>
+
+                    <svg class="place__icon place__icon--5">
+                        <use xlink:href="/img/sprite.svg#icon-location">
+                        </use>
+                    </svg>
+                    <p class="place__address place__address--5">ул.Пятницкая,&nbsp;47с1</p>
+                </figcaption>
+            </figure>
+        </div>
+    </section>
+
+    <article class="cards" id="cartier">
+        <div class="card card--1">
+            <a href="#" class="card__link">
+                <figure>                
+                    <img src="./img/jewelry/circle2-m.png" alt="photo circle" class="card__img">
+                </figure>
+                <div class="card__text">
+                    <p class="card__name">КОЛЬЦО jow's, Cartier</p>
+                    <p class="card__subtitle">Белое золото, бриллианты</p>
+                    <p class="card__price">674 000 ₽</p>
+                </div>
+            </a>
+        </div>
+        <div class="card card--2">
+            <a href="#" class="card__link">
+                <figure>                
+                    <img src="./img/jewelry/circle3-m.png" alt="photo circle" class="card__img">
+                </figure>
+                <div class="card__text">
+                    <p class="card__name">КОЛЬЦО jow's, Cartier</p>
+                    <p class="card__subtitle">Белое золото, бриллианты</p>
+                    <p class="card__price">674 000 ₽</p>
+                </div>
+            </a>
+        </div>
+        <div class="card card--3">
+            <a href="#" class="card__link card__link--central">
+                <figure>                
+                    <img src="./img/jewelry/model-m.png" alt="photo jewelry on model" class="card__img card__img--central">
+                </figure>
+                <div class="card__text card__text--central">
+                    <p class="card__name">КОлье etoile, HUBLOT</p>
+                    <p class="card__subtitle">Белое золото, бриллианты</p>
+                    <p class="card__price">539 000 ₽</p>
+                </div>
+            </a>
+        </div>
+        <div class="card card--4" >
+            <a href="#" class="card__link">
+                <figure>                
+                    <img src="./img/jewelry/earrings1-m.png" alt="photo earrings" class="card__img">
+                </figure>
+                <div class="card__text">
+                    <p class="card__name">Серьги moon, HUBLOT</p>
+                    <p class="card__subtitle">Желтое золото, сапфир</p>
+                    <p class="card__price">498 000 ₽</p>
+                </div>
+            </a>
+        </div>
+        <div class="card card--5">
+            <a href="#" class="card__link">
+                <figure>                
+                    <img src="./img/jewelry/earrings2-m.png" alt="photo earrings" class="card__img">
+                </figure>
+                <div class="card__text">
+                    <p class="card__name">серьги win, BLANCPAIN</p>
+                    <p class="card__subtitle">Желтое золото, жемчуг</p>
+                    <p class="card__price">398 000 ₽</p>
+                </div>
+            </a>
+        </div>
+    </article>
+
+    <section class="about-us">
+        <div class="about-us__container">
+            <h2 class="about-us__title">
+                Мы в социальных сетях
+            </h2>
+        </div>
+            <div class="about-us__photo-album">
+                <figure class="about-us__content">
+                    <img src="./img/social-media/photo1-m.png" alt="" class="about-us__img">
+                </figure>
+                <figure class="about-us__content">
+                    <img src="./img/social-media/photo2-m.png" alt="" class="about-us__img">
+                </figure>
+                <figure class="about-us__content">
+                    <img src="./img/social-media/photo3-m.png" alt="" class="about-us__img">
+                </figure>
+                <figure class="about-us__content">
+                    <img src="./img/social-media/photo4-m.png" alt="" class="about-us__img">
+                </figure>
+                <figure class="about-us__content">
+                    <img src="./img/social-media/photo5-m.png" alt="" class="about-us__img">
+                </figure>
+            </div>
+            <div class="about-us__container">
+                <div class="about-us__slider">
+                    <div class="social">
+                        <a href="#" class="social__link" target="_blank">
+                            <svg class="social__icon">
+                            <use xlink:href="./img/sprite.svg#icon-facebook">
+                            </use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__link" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="/img/sprite.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                    
+                    <a href="#" class="about-us__link about-us__link--reverse">
+                        <span class="arrow arrow--reverse">&rarr;</span>
+                    </a>
+
+                    <div class="radio-btn btn">
+                        <div class="radio-btn__group">
+                            <input type="radio" class="radio-btn__input" id="first-1" name="size">
+                            <label for="first-1" class="radio-btn__label">
+                                <span class="radio-btn__button"></span>
+                            </label> 
+                        </div>
+                    
+                        <div class="radio-btn__group">
+                            <input type="radio" class="radio-btn__input" id="second-1" name="size">
+                            <label for="second-1" class="radio-btn__label">
+                                <span class="radio-btn__button"></span>
+                            </label> 
+                        </div>  
+
+                        <div class="radio-btn__group">
+                            <input type="radio" class="radio-btn__input" id="third-1" name="size">
+                            <label for="third-1" class="radio-btn__label">
+                                <span class="radio-btn__button"></span>
+                            </label> 
+                        </div>  
+
+                        <div class="radio-btn__group">
+                            <input type="radio" class="radio-btn__input" id="fourth-1" name="size">
+                            <label for="fourth-1" class="radio-btn__label">
+                                <span class="radio-btn__button"></span>
+                            </label> 
+                        </div>   
+                    </div> 
+
+                    <a href="#" class="about-us__link">
+                        <span class="arrow">&rarr;</span>
+                    </a>
+                </div>
+            </div>    
+    </section>
+
+    <article class="contacts">
+        <div class="contacts__block-photo">
+            <img src="./img/people/women2.photo-m.png" alt="women photo" class="contacts__photo">
+        </div>
+        <div class="contacts__block-text">
+            <div class="contacts__container contacts__container--animated">
+                <h4 class="contacts__title">телефон флагманского магазина</h4>
+                    <a class="contacts__telephone" href="tel:+7800456456">
+                       <p cla>+7 800 456 456</p>
+                    </a>
+                <form class="form-mail form-mail--contacts" action="#">
+                    <span class="form-mail__text">подпишитесь на новости</span>
+                    <div class="form-mail__container form-mail__container--contacts">
+                        <input class="form-mail__input" type="email" name="mail" id="form-mail" placeholder="Введите E-mail" required>
+                        <button class="form-mail__btn" form="form-mail" type="submit" aria-label="subscribe to the newsletter">&rarr;</button>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </article>
+
+    <footer class="footer">
+        <div class="footer__container">
+            <ul class="footer__nav">
+                <li class="footer__list">
+                    <a href="#" class="footer__link">
+                        работа в компании 
+                    </a>
+                </li>
+                <li class="footer__list">
+                    <a href="#" class="footer__link">
+                        условия пользования
+                    </a>
+                </li>
+                <li class="footer__list">
+                    <a href="#" class="footer__link">
+                        выходные данные
+                    </a>
+                </li>
+                <li class="footer__list">
+                    <a href="#" class="footer__link">
+                        политика конфиденциальности
+                    </a>
+                </li>
+                <li class="footer__list">
+                    <a href="#" class="footer__link">
+                        карта сайта
+                    </a>
+                </li>
+            </ul>
+            <div class="footer__bottom">
+                <div class="footer__logo-box">
+                    <a href="#" class="logo__link">
+                        <img src="./img/logo-2.svg" alt="logo Moon-River" class="logo__photo">
+                    </a>
+                </div>  
+
+                <div class="footer__social-media">
+                    <h4>телефон горячей линии</h4>
+                    <a class="popup__telephone" href="tel:+7800456456">
+                       <p>+7 800 456 456</p>
+                    </a>
+                    <div class="social social--footer">
+                        <a href="#" class="social__link" target="_blank">
+                            <svg class="social__icon">
+                            <use xlink:href="./img/sprite.svg#icon-facebook">
+                            </use>
+                            </svg>
+                        </a>
+                        <a href="#" class="social__link" target="_blank">
+                            <svg class="social__icon">
+                                <use xlink:href="/img/sprite.svg#icon-instagram">
+                                </use>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="footer__subscribe">
+                    <form class="form-mail form-mail--footer" action="#">
+                        <span class="form-mail__text">подпишитесь на новости
+                        </span>
+                        <div class="form-mail__container">
+                            <input class="form-mail__input form-mail__input" type="email" name="mail" id="form-mail" placeholder="Введите E-mail" required>
+                            <button class="form-mail__btn" form="form-mail" type="submit" aria-label="subscribe to the newsletter">&rarr;</button>
+                        </div>
+                    </form>
+
+                    <div class="social social--footer">
+                        <a href="#" class="social__link-store" target="_blank">
+                            <img src="./img/social-media/apple-store-logo.png" alt="link to apple store" class="social__img">
+                        </a>
+                        <a href="#" class="social__link-store" target="_blank">
+                            <img src="./img/social-media/google-play-logo.png" alt="link to google play" class="social__img">
+                        </a>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </footer>
+<script src="./index.js"></script>  
+</body>
+</html>

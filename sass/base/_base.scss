@@ -1,0 +1,69 @@
+*,
+*::after,
+*::before{
+    padding: 0;
+    margin:0;
+    box-sizing: inherit;
+}
+
+html {
+    font-size: 62.5%;
+
+    @include respond(tab-land) {  // width < 1200 ?
+        font-size: 56.25%;   //1 rem = 9px , 9/1 6 = 56%
+    }
+    
+    @include respond(tab-port) {// width < 900 ?
+        font-size: 50%;  //1 rem = 8px , 8/16 = 50%
+    }
+}
+
+body {
+    box-sizing: border-box; 
+    font-weight: 300;
+}
+
+h2 {
+    font-family: 'Forum', sans-serif;
+    font-size: 6.4rem;
+    color: $color-text-primary;
+    font-weight: 400;
+    line-height: 2.1;
+
+    @include respond (phone) {
+        font-size: 3.2rem;
+     }
+}
+
+h3 {
+    font-family: 'Futura PT Book', sans-serif;
+    line-height: 2.1;
+    font-weight: 500;
+    text-transform: uppercase;
+    color: $color-text-primary;
+    font-size: $default-font-size;
+}
+
+h4 {
+    font-family: 'Futura PT Book', sans-serif;
+    line-height: 2.1;
+    font-weight: 450;
+    text-transform: uppercase;
+    font-size: $default-font-size;
+}
+
+a {
+    text-decoration: none;
+    color: $color-text-primary;
+}
+
+p {
+    font-size: 1.8rem;
+    font-weight: 300;
+}
+
+li {
+    list-style: none;
+}
+
+

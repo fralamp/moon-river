@@ -1,0 +1,122 @@
+.header {
+    position: relative;
+    background-image: linear-gradient(to right, $color-secondary 60%, $color-primary 40%);
+    margin-bottom: 2rem;
+    overflow: hidden;
+
+    &__container {
+        margin: 0 auto;
+        max-width: 115rem;
+        padding: 0 1.5rem;
+    }
+
+    &__content {
+        display: flex;
+        padding-top: 40.8rem;
+        padding-bottom: 28rem;
+        align-items: center;
+
+        animation: moveInBottom .5s ease-in-out .3s;
+        animation-fill-mode: backwards;
+
+        @include respond (phone) {
+           padding-top: 20rem;
+           padding-bottom: 14rem;
+        }
+    }
+
+    &__title {
+        margin-right: 13.5rem;
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    &__heading {
+        display: block;
+        margin: 0 ;
+        position: relative;
+        font-size: 6.4rem;
+
+        font-family: 'Forum', sans-serif;
+        color: $color-primary;
+
+        @include respond (phone) {
+            font-size: 3.2rem;
+         }
+
+        &::after {
+            position: absolute;
+            content: "";
+            width: 35%;
+            height: 1px;
+            bottom: -2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            background-color: $color-primary;
+
+            @include respond (phone) {
+                width: 20%;
+                bottom: 0;
+             }
+        }
+    }
+
+    &__img {
+        height: 95%;
+        @include respond (phone) {
+            width: 35vw;
+         }
+
+    }
+
+    &__link {
+        font-size: 1.8rem;
+        color: $color-primary;
+
+        &--see {
+            font-style: italic;
+            transform: translateX(50%);
+
+            @include respond (phone) {
+                transform: none;
+             }
+        }
+
+        &--ru,
+        &--en {
+            font-size: $default-font-size;
+            font-weight: 400;
+        }
+
+        &--en{
+            color: #C4C4C4;
+        }
+    }
+
+    &__inner-block {
+        text-align: right;
+
+        animation: moveInBottom .5s ease-in-out .3s;
+        animation-fill-mode: backwards;
+    }
+
+    &__text {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-end;
+    }
+
+    &__subtitle {
+        display: block;
+        margin: .9rem 0;
+
+        color: $color-text-tertiary;
+        font-weight: 300;
+    }
+
+    &__price {
+        font-style: italic;
+        color: $color-text-secondary;
+    }
+}

@@ -1,0 +1,43 @@
+.footer {
+    background-color: $color-primary;
+
+    &__container {
+        margin: 0 auto;
+        max-width: 115rem;
+        padding: 8rem 1.5rem;
+
+        @include respond (tab-port) {
+            padding: 4rem 1.5rem;
+        }
+    }
+
+    &__nav {
+        display: flex;
+        justify-content: space-between;
+        margin-bottom: 9rem;
+
+        @include respond (tab-port) {
+            margin-bottom: 4rem;
+        }
+    }
+
+    &__link {
+        text-transform: uppercase;
+        font-size: 1.4rem;
+        color: $color-text-primary;
+        transition: all .3s;
+
+        &:hover,
+        &:focus {
+                color: $color-text-secondary;
+            }
+    }
+
+    &__bottom {
+        display:  flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+
+
+}
